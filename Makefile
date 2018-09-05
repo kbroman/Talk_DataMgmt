@@ -1,10 +1,10 @@
 STEM = datamgmt
 
-$(STEM).pdf: $(STEM).tex header.tex Figs/activity1_ugly.pdf
+$(STEM).pdf: $(STEM).tex header.tex Figs/spreadsheet_ugly.pdf
 	xelatex $<
 
-Figs/activity1_ugly.pdf: R/make_activity1_figs.R ../Activity1/Activity1.csv ../Activity1/Activity1_tidy.csv
-	Rscript R/make_activity1_figs.R
+Figs/spreadsheet_ugly.pdf: R/make_spreadsheet_figs.R example_ugly.csv example_tidy.csv
+	cd $(<D);R -e "source('$(<F)')"
 
-web: $(STEM).pdf $(STEM)_withnotes.pdf
+web: $(STEM).pdf
 	scp $(STEM).pdf adhara.biostat.wisc.edu:Website/presentations/$(STEM).pdf
