@@ -6,6 +6,7 @@ Program](https://ictr.wisc.edu/program/kl2-scholar-program/)
 at UW-Madison on 5 Sept 2018.
 
 
+Slides (pdf): [bit.ly/datamgmt2018](https://bit.ly/datamgmt2018)
 
 ---
 
