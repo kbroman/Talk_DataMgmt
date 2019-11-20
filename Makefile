@@ -1,7 +1,10 @@
 STEM = datamgmt
 
-$(STEM).pdf: $(STEM).tex header.tex Figs/spreadsheet_ugly.pdf Figs/il3.pdf
+$(STEM).pdf: $(STEM).tex header.tex Figs/spreadsheet_ugly.pdf Figs/il3.pdf Figs/data_dict.pdf
 	xelatex $<
+
+Figs/data_dict.pdf: R/make_data_dict.R
+	cd $(<D);R -e "source('$(<F)')"
 
 Figs/spreadsheet_ugly.pdf: R/make_spreadsheet_figs.R example_ugly.csv example_tidy.csv
 	cd $(<D);R -e "source('$(<F)')"

@@ -15,7 +15,7 @@ ugly <- rbind(rep("", ncol(ugly)),
               ugly[-(1:5),])
 
 
-pdf("../Figs/spreadsheet_ugly.pdf", height=6, width=8, pointsize=14)
+pdf("../Figs/spreadsheet_ugly.pdf", height=5, width=10, pointsize=14)
 excel_fig(ugly, col_names=FALSE)
 dev.off()
 
@@ -23,6 +23,6 @@ tidy <- read.csv("../example_tidy.csv",
                  header=TRUE, stringsAsFactors=FALSE,
                  colClasses=character())
 
-pdf("../Figs/spreadsheet_tidy.pdf", height=5, width=8, pointsize=12)
+pdf("../Figs/spreadsheet_tidy.pdf", height=5, width=10, pointsize=12)
 excel_fig(tidy[1:9,])
 dev.off()
