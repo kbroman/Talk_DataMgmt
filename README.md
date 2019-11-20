@@ -3,10 +3,10 @@
 These are slides for a presentation on data management for the
 [KL2 Scholar
 Program](https://ictr.wisc.edu/program/kl2-scholar-program/)
-at UW-Madison on 5 Sept 2018.
+at UW-Madison on 5 Sept 2018 and 11 Nov 2019.
 
 
-Slides (pdf): [bit.ly/datamgmt2018](https://bit.ly/datamgmt2018)
+Slides (pdf): [bit.ly/datamgmt2019](https://bit.ly/datamgmt2019)
 
 ---
 
