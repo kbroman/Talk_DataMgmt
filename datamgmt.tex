@@ -232,22 +232,134 @@ Data4Tram/        PepIns_2012-02-09/
 
 
 
-\begin{frame}<handout:0>[c]{No ``{\hilit final}'' in file names}
+\begin{frame}[fragile,c]{Choose good names for things}
+
+\begin{center}
+\begin{minipage}[c]{13.7cm}
+\begin{semiverbatim}
+\lstset{basicstyle=\scriptsize}
+\begin{lstlisting}[linewidth=13.7cm]
+betw_tissue_corr.R     expr_scatterplot_allprobes.R  gve_similarity_alltissues.R
+coatcolor_lod.R        expr_scatterplots_dup.R       gve_similarity.R
+colors.R               expr_scatterplots_mix.R       gve_supp.R
+cover_fig.R            expr_scatterplots_swap.R      insulin_lod.R
+eqtl_counts_10.R       expr_swaps.R                  local_eqtl_locations.R
+eqtl_counts.R          func.R                        my_plot_map.R
+eve_hist.R             genotype_plates.R             my_plot_scanone.R
+eve_scheme.R           gve_hist.R                    sex_vs_X.R
+eve_similarity.R       gve_new.R                     xchr_fig.R
+eve_similarity_supp.R  gve.R                         xist_and_y.R
+expr_corr_dup.R        gve_scheme.R
+expr_corr_mix.R        gve_similarity_2ndbest.R
+\end{lstlisting}
+\end{semiverbatim}
+\end{minipage}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}[fragile,c]{Choose good names for things}
+
+\begin{center}
+\begin{minipage}[c]{8.3cm}
+\begin{semiverbatim}
+\lstset{basicstyle=\normalsize}
+\begin{lstlisting}[linewidth=8.3cm]
+fig1.png        fig5.png
+fig10.png       fig6.png
+fig2.png        fig7.png
+fig3.png        fig8.png
+fig4.png        fig9.png
+\end{lstlisting}
+\end{semiverbatim}
+\end{minipage}
+\end{center}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[c]{Choose good names for things}
+
+  \bbi
+  \item Machine readable
+    \bi
+    \item No spaces
+    \item No special characters except {\textunderscore} and
+      {\tt -}
+    \ei
+
+  \item Human readable
+    \bi
+    \item Explain the contents
+    \ei
+
+  \item Consistent
+    \bi
+      \item Name similar files in a similar way
+    \ei
+
+  \item Make use of computer's sorting
+    \bi
+      \item pad numbers with 0's (e.g., {\tt 01}, {\tt 02}, ...)
+      \item start with general grouping, then more specific
+      \item dates like {\tt 2019-05-14}
+    \ei
+
+  \ei
+\end{frame}
+
+
+
+\begin{frame}[fragile,c]{Choose good names for things}
+
+\begin{center}
+\begin{minipage}[c]{10.3cm}
+\begin{semiverbatim}
+\lstset{basicstyle=\normalsize}
+\begin{lstlisting}[linewidth=10.3cm]
+0_vcf2db.R
+1_prep_geno.R
+2_prep_pheno_clin.R
+2_prep_pheno_otu.R
+3_prep_covar.R
+4_prep_analysis_pheno_clin.R
+4_prep_analysis_pheno_otu.R
+5_scans.R
+6_grab_peaks.R
+7_find_nearby_peaks.R
+\end{lstlisting}
+\end{semiverbatim}
+\end{minipage}
+\end{center}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{No ``{\hilit final}'' in file names}
 
 \vspace*{3mm}
 
 \centering
 
 % comic from http://www.phdcomics.com/comics/archive.php?comicid=1531
-\only<1>{\figh{Figs/phd101212s.png}{0.8}}
+\figh{Figs/phd101212s.png}{0.8}
 
 \end{frame}
+
 
 
 \begin{frame}<handout:0>[fragile,c]{No ``{\hilit final}'' in file names}
 
 
 \addtocounter{framenumber}{-1}
+
 
 \begin{center}
 \begin{minipage}[c]{9.5cm}
@@ -284,13 +396,12 @@ Data4Tram/        PepIns_2012-02-09/
 \end{center}
 
 
+
 \end{frame}
 
 
-\begin{frame}<handout:0>[fragile,c]{No ``{\hilit final}'' in file names}
+\begin{frame}[fragile,c]{No ``{\hilit final}'' in file names}
 
-
-\addtocounter{framenumber}{-1}
 
 \begin{center}
 \begin{minipage}[c]{9.5cm}
@@ -330,18 +441,58 @@ Data4Tram/        PepIns_2012-02-09/
 \end{frame}
 
 
-\begin{frame}[c]{Naming files}
+\begin{frame}[fragile,c]{Choose good names for things}
+
+
+\begin{center}
+\begin{minipage}[c]{9.5cm}
+\begin{semiverbatim}
+\lstset{basicstyle=\tiny}
+\begin{lstlisting}[escapechar=!,linewidth=9.5cm]
+batches_raw_v1.rds               geneexpr_mlratio_gastroc_v2.rds
+batches_v1.rds                   geneexpr_mlratio_hypo_v1.rds
+clinical_cpl_v2.rds              geneexpr_mlratio_hypo_v2.rds
+clinical_d2o_v2.rds              geneexpr_mlratio_islet_v2.rds
+clinical_lipomics_v4.rds         geneexpr_mlratio_kidney_v2.rds
+clinical_liverTG_v2.rds          geneexpr_mlratio_liver_v2.rds
+clinical_mirna_v2.rds            geneexpr_mlratio_nqrank_adipose_v2.rds
+clinical_necropsy_v4.rds         geneexpr_mlratio_nqrank_gastroc_v2.rds
+clinical_plasmaurine_v3.rds      geneexpr_mlratio_nqrank_hypo_v1.rds
+clinical_rbm_v2.rds              geneexpr_mlratio_nqrank_hypo_v2.rds
+Deprecated/                      geneexpr_mlratio_nqrank_islet_v2.rds
+geneexpr_int1_adipose_v2.rds     geneexpr_mlratio_nqrank_kidney_v2.rds
+geneexpr_int1_gastroc_v2.rds     geneexpr_mlratio_nqrank_liver_v2.rds
+geneexpr_int1_hypo_v2.rds        geneexpr_omit_hypo.rds
+geneexpr_int1_islet_v2.rds       geneexpr_prcomp_adipose_v2.rds
+geneexpr_int1_kidney_v2.rds      geneexpr_prcomp_gastroc_v2.rds
+geneexpr_int1_liver_v2.rds       geneexpr_prcomp_hypo_v2.rds
+geneexpr_int2_adipose_v2.rds     geneexpr_prcomp_islet_v2.rds
+geneexpr_int2_gastroc_v2.rds     geneexpr_prcomp_kidney_v2.rds
+geneexpr_int2_hypo_v2.rds        geneexpr_prcomp_liver_v2.rds
+geneexpr_int2_islet_v2.rds       geno_aligned_w_pmap.rds
+geneexpr_int2_kidney_v2.rds      geno_pmark.rds
+geneexpr_int2_liver_v2.rds       ReadMe.txt
+geneexpr_mlratio_adipose_v2.rds
+\end{lstlisting}
+\end{semiverbatim}
+\end{minipage}
+\end{center}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{Document your work}
 
   \bbi
-\item Concise
-\item Meaningful
-\item No spaces or special characters except underscores and hyphens
-\item Dates like 2018-09-05 (or 20180905)
-\item Sortable
-\item Be consistent
+\item What is all of this stuff?
+\item What was your analysis process?
+\vspace{1cm}
+\item[$\boldsymbol{\rightarrow}$] {\large {\tt ReadMe} files}
   \ei
 
 \end{frame}
+
 
 
 
@@ -451,31 +602,6 @@ Am Stat 78:2--10, 2018}
 
 \end{frame}
 
-
-
-
-\begin{frame}[c]{A few more things}
-
-  \bbi
-\item Documentation
-  \bi
-\item Detailed electronic notes
-\item Have sympathy for your future self
-\item Maintained to match the material
-  \ei
-\item Versions
-  \bi
-  \item Save everything
-  \item Number files like {\tt \_v1}, {\tt \_v2}, ...
-  \ei
-\item Backups
-  \bi
-\item Multiple places (external drives, cloud, server)
-\item Needs to be automatic
-  \ei
-  \ei
-
-\end{frame}
 
 
 
