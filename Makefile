@@ -13,4 +13,4 @@ Figs/il3.pdf: R/data_cleaning_figs.R R/il3.rds R/adipose_weight.rds
 	cd $(<D);R -e "source('$(<F)')"
 
 web: $(STEM).pdf
-	scp $(STEM).pdf adhara.biostat.wisc.edu:Website/presentations/$(STEM).pdf
+	scp $(STEM).pdf adhara.biostat.wisc.edu:Website/presentations/$(STEM)2019.pdf
