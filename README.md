@@ -1,5 +1,7 @@
 ## Data Management
 
+[![doi:10.5281/zenodo.3548923](https://zenodo.org/badge/doi/10.5281/zenodo.3548923.svg)](https://doi.org/10.5281/zenodo.3548923)
+
 These are slides for a presentation on data management for the
 [KL2 Scholar
 Program](https://ictr.wisc.edu/program/kl2-scholar-program/)
